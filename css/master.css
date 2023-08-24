@@ -1,0 +1,83 @@
+body {
+    /* font: Montserrat; */
+    background: linear-gradient(45deg, #ff7f50, #00bfff);
+    background-size: 400% 400%;
+    animation: gradientAnimation 15s ease infinite;
+    margin: 0;
+    padding: 0;
+    transition: background 0.5s;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+
+#citySelector, #fetchWeather {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(240, 240, 240, 0.9);
+    margin-bottom: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#fetchWeather {
+    background: linear-gradient(45deg, #ff7f50, #00bfff);
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+#fetchWeather:hover {
+    background-color: #0056b3;
+}
+
+#weatherDisplay {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    background-color: rgba(248, 248, 248, 0.9);
+    transition: background-color 0.5s;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+img.weather-icon {
+    width: 55px;
+    height: 30px;
+    margin-right: 10px;
+}
